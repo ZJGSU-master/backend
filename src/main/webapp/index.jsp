@@ -129,7 +129,8 @@
         $.ajax({
             type: "get",
             async: true, //异步请求（同步请求将会锁住浏览器，其他操作须等请求完成才可执行）
-            url: "http://localhost:8080/Embedded_background_war_exploded/show_data", //请求发送到TestServlet
+            // url: "http://localhost:8080/Embedded_background_war_exploded/show_data", //请求发送到TestServlet
+            url: "http://localhost:9999/Embedded_background/show_data", //请求发送到TestServlet
             data: {},
             dataType: "json", //返回数据形式为json
 

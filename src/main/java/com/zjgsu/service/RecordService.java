@@ -52,7 +52,7 @@ public class RecordService {
 
     public List<RecordEntity> showRecord() {
         List<Order> orders = new ArrayList<>();
-        orders.add(Order.asc("recordTime"));
+        orders.add(Order.desc("recordTime"));
         List<RecordEntity> recordList = recordDao.listPageByCriterionAndOrder(1, 20, orders);
 
         return recordList;
